@@ -13,4 +13,13 @@ public class FizzBuzzTest {
 
         Assertions.assertThat(result).isEqualTo("1");
     }
+
+    @Test
+    void fizzbuzz_of_2_returns_2() {
+        FizzBuzzer fizzBuzzer = new FizzBuzzer();
+
+        String result = fizzBuzzer.fizzbuzz(2);
+
+        Assertions.assertThat(result).isEqualTo("2");
+    }
 }
